@@ -8,14 +8,14 @@ import 'package:provider/provider.dart';
 import '../../resuable/colors.dart';
 import '../../resuable/reusable_widgets.dart';
 
-class IndSignUp extends StatefulWidget {
-  const IndSignUp({super.key});
+class OrgSignUp extends StatefulWidget {
+  const OrgSignUp({super.key});
 
   @override
-  State<IndSignUp> createState() => _IndSignUpState();
+  State<OrgSignUp> createState() => _OrgSignUpState();
 }
 
-class _IndSignUpState extends State<IndSignUp> {
+class _OrgSignUpState extends State<OrgSignUp> {
   @override
   Widget build(BuildContext context) {
     double hei = MediaQuery.of(context).size.height;

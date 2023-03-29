@@ -80,6 +80,7 @@ flutter:
     - assets\icons\locicon.svg
     - assets\Vector.svg
     - assets\icons\homeicon.svg
+    - assets\icons\settings.svg
     - assets\icons\exploreicon.svg
     - assets\icons\communityicon.svg
     - assets\icons\alerticon.svg

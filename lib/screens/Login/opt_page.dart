@@ -3,8 +3,10 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:givelive/navtab.dart';
 import 'package:givelive/provider/auth_provider.dart';
 import 'package:givelive/screens/Login/IndSignup.dart';
+import 'package:givelive/screens/Login/signup.dart';
 import 'package:givelive/utils/utils.dart';
 import 'package:pinput/pinput.dart';
 import 'package:givelive/resuable/colors.dart';
@@ -193,11 +195,14 @@ class _OtpPageState extends State<OtpPage> {
         onSuccess: () {
           ap.checkExistingUser().then((value) async {
             if (value == true) {
-              
+              Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => homepage()),
+                  (route) => false);
             } else {
               Navigator.pushAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => IndSignUp()),
+                  MaterialPageRoute(builder: (context) => SignUp()),
                   (route) => false);
             }
           });

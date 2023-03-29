@@ -23,37 +23,38 @@ class _SettingsState extends State<Settings> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Container(
-            margin: EdgeInsets.fromLTRB(0.038 * wid, 0.03 * hei, 0.038 * wid, 0.03 * hei),
-            height: 0.05 * hei,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colors.grey.shade200),
-            child: TextField(
-              style: const TextStyle(
-                  fontFamily: "Poppins-Bold",
-                  fontWeight: FontWeight.normal,
-                  fontSize: 18),
-              decoration: InputDecoration(
-                  hintText: "Search",
-                  border: InputBorder.none,
-                  prefixIcon: Icon(
-                    Icons.search,
-                    color: Colors.grey,
-                    size: 0.03 * hei,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Container(
+                margin: EdgeInsets.fromLTRB(
+                    0.038 * wid, 0.03 * hei, 0.038 * wid, 0.03 * hei),
+                height: 0.05 * hei,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.grey.shade200),
+                child: TextField(
+                  style: const TextStyle(
+                      fontFamily: "Poppins",
+                      fontWeight: FontWeight.normal,
+                      fontSize: 18),
+                  decoration: InputDecoration(
+                    hintText: "Search",
+                    border: InputBorder.none,
+                    prefixIcon: Icon(
+                      Icons.search,
+                      color: Colors.grey,
+                      size: 0.03 * hei,
+                    ),
                   ),
-                  ),
-        ),
-      ),
-            SizedBox(
-              height: 0.6 * hei,
-              child: Column(
+                ),
+              ),
+              SizedBox(
+                height: 0.6 * hei,
+                child: Column(
                   children: <Widget>[
                     Row(
-                    children: [
-                      Container(
+                      children: [
+                        Container(
                           height: 50,
                           alignment: Alignment.center,
                           padding: EdgeInsets.fromLTRB(0.05 * wid, 0, 0, 0),
@@ -62,14 +63,16 @@ class _SettingsState extends State<Settings> {
                             color: red,
                           ),
                         ),
-                      Container(
+                        Container(
                           height: 50,
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.fromLTRB(0.04 * wid, 0, 0, 0),
-                          child: const Text('Create a Community',
-                          style: TextStyle(
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.normal,),
+                          child: const Text(
+                            'Create a Community',
+                            style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ],
@@ -89,10 +92,12 @@ class _SettingsState extends State<Settings> {
                           height: 50,
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.fromLTRB(0.04 * wid, 0, 0, 0),
-                          child: const Text('Notifications',
-                          style: TextStyle(
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.normal,),
+                          child: const Text(
+                            'Notifications',
+                            style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ],
@@ -112,10 +117,12 @@ class _SettingsState extends State<Settings> {
                           height: 50,
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.fromLTRB(0.04 * wid, 0, 0, 0),
-                          child: const Text('My Donations',
-                          style: TextStyle(
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.normal,),
+                          child: const Text(
+                            'My Donations',
+                            style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ],
@@ -135,10 +142,12 @@ class _SettingsState extends State<Settings> {
                           height: 50,
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.fromLTRB(0.04 * wid, 0, 0, 0),
-                          child: const Text('Liked Posts',
-                          style: TextStyle(
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.normal,),
+                          child: const Text(
+                            'Liked Posts',
+                            style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ],
@@ -158,10 +167,12 @@ class _SettingsState extends State<Settings> {
                           height: 50,
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.fromLTRB(0.04 * wid, 0, 0, 0),
-                          child: const Text('Saved',
-                          style: TextStyle(
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.normal,),
+                          child: const Text(
+                            'Saved',
+                            style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ],
@@ -181,10 +192,12 @@ class _SettingsState extends State<Settings> {
                           height: 50,
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.fromLTRB(0.04 * wid, 0, 0, 0),
-                          child: const Text('Help',
-                          style: TextStyle(
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.normal,),
+                          child: const Text(
+                            'Help',
+                            style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ],
@@ -204,10 +217,12 @@ class _SettingsState extends State<Settings> {
                           height: 50,
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.fromLTRB(0.04 * wid, 0, 0, 0),
-                          child: const Text('About',
-                          style: TextStyle(
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.normal,),
+                          child: const Text(
+                            'About',
+                            style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ],
@@ -227,24 +242,26 @@ class _SettingsState extends State<Settings> {
                           height: 50,
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.fromLTRB(0.04 * wid, 0, 0, 0),
-                          child: const Text('Theme',
-                          style: TextStyle(
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.normal,),
+                          child: const Text(
+                            'Theme',
+                            style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ],
                     ),
                   ],
                 ),
-            ),
-            SizedBox(
-              height: 0.2 * hei,
-              child: ListView(
-                children: [
-                  Row(
-                    children: [
-                      Container(
+              ),
+              SizedBox(
+                height: 0.2 * hei,
+                child: ListView(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
                           height: 50,
                           alignment: Alignment.center,
                           padding: EdgeInsets.fromLTRB(0.05 * wid, 0, 0, 0),
@@ -253,23 +270,25 @@ class _SettingsState extends State<Settings> {
                             color: red,
                           ),
                         ),
-                      Container(
+                        Container(
                           height: 50,
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.fromLTRB(0.04 * wid, 0, 0, 0),
-                          child: const Text('Log out',
-                          style: TextStyle(
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.normal,),
+                          child: const Text(
+                            'Log out',
+                            style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
-                    ],
-                  ),
-                ],
-              ),
-           )
-          ],
-        ),
+                      ],
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
