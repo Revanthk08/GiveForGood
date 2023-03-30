@@ -10,18 +10,22 @@ class videoview extends StatefulWidget {
 
 class _videoviewState extends State<videoview> {
   @override
-  Widget build(BuildContext context) => Container(
-        color: Colors.white,
-        child: StaggeredGridView.countBuilder(
-          staggeredTileBuilder: (index) =>
-              StaggeredTile.fit(1), //cross axis cell count
-          mainAxisSpacing: 8, // vertical spacing between items
-          crossAxisSpacing: 8, // horizontal spacing between items
-          crossAxisCount: 2, // no. of virtual columns in grid
-          itemCount: 10,
-          itemBuilder: (context, index) => buildImageCard(index),
-        ),
-      );
+  Widget build(BuildContext context) {
+    double wid = MediaQuery.of(context).size.width;
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 0.03 * wid),
+      color: Colors.white,
+      child: StaggeredGridView.countBuilder(
+        staggeredTileBuilder: (index) =>
+            StaggeredTile.fit(1), //cross axis cell count
+        mainAxisSpacing: 8, // vertical spacing between items
+        crossAxisSpacing: 8, // horizontal spacing between items
+        crossAxisCount: 2, // no. of virtual columns in grid
+        itemCount: 10,
+        itemBuilder: (context, index) => buildImageCard(index),
+      ),
+    );
+  }
 
   Widget buildImageCard(int index) => Container(
         color: Colors.white,

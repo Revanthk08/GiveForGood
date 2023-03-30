@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:givelive/resuable/colors.dart';
 
@@ -274,12 +275,17 @@ class _SettingsState extends State<Settings> {
                           height: 50,
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.fromLTRB(0.04 * wid, 0, 0, 0),
-                          child: const Text(
-                            'Log out',
-                            style: TextStyle(
-                              fontFamily: "Poppins",
-                              fontWeight: FontWeight.normal,
+                          child: TextButton(
+                            child: Text(
+                              'Log out',
+                              style: TextStyle(
+                                fontFamily: "Poppins",
+                                fontWeight: FontWeight.normal,
+                              ),
                             ),
+                            onPressed: () {
+                              FirebaseAuth.instance.signOut();
+                            },
                           ),
                         ),
                       ],

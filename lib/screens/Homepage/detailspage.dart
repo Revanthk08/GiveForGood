@@ -121,24 +121,6 @@ class _DetailsPageState extends State<DetailsPage> {
                           fontWeight: FontWeight.w500,
                           fontSize: 0.025 * hei),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Text("View all",
-                            style: TextStyle(
-                                fontFamily: "Poppins",
-                                fontSize: 0.015 * hei,
-                                color: red)),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.arrow_forward,
-                            color: red,
-                            size: 18,
-                          ),
-                        ),
-                      ],
-                    )
                   ],
                 ),
               ),
@@ -362,24 +344,6 @@ class _DetailsPageState extends State<DetailsPage> {
                           fontWeight: FontWeight.w500,
                           fontSize: 0.025 * hei),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Text("View all",
-                            style: TextStyle(
-                                fontFamily: "Poppins",
-                                fontSize: 0.015 * hei,
-                                color: red)),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.arrow_forward,
-                            color: red,
-                            size: 18,
-                          ),
-                        ),
-                      ],
-                    )
                   ],
                 ),
               ),
@@ -869,24 +833,6 @@ class _DetailsPageState extends State<DetailsPage> {
                           fontWeight: FontWeight.w500,
                           fontSize: 20),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Text("View all",
-                            style: TextStyle(
-                                fontFamily: "Poppins",
-                                fontSize: 0.015 * hei,
-                                color: red)),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.arrow_forward,
-                            color: red,
-                            size: 18,
-                          ),
-                        ),
-                      ],
-                    )
                   ],
                 ),
               ),

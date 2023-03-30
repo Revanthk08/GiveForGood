@@ -25,6 +25,8 @@ class _IndSignUpState extends State<IndSignUp> {
   String lastname = "";
   String emailid = "";
   String pass = "";
+  bool pvisibility = false;
+  bool cpvisibility = false;
 
   void dispose() {
     super.dispose();
@@ -49,8 +51,6 @@ class _IndSignUpState extends State<IndSignUp> {
     String email = '';
     String password = '';
     String cpassword = '';
-    bool pvisibility = false;
-    bool cpvisibility = false;
 
     double baseWidth = 428;
     double fem = MediaQuery.of(context).size.width / baseWidth;
@@ -202,105 +202,15 @@ class _IndSignUpState extends State<IndSignUp> {
                   ),
                   const SizedBox(height: 4),
                   Container(
-                      margin: EdgeInsets.fromLTRB(
-                          0.05 * wid, 0.015 * hei, 0.05 * wid, 0.01 * hei),
-                      child: const Text(
-                        "Password",
-                        style: TextStyle(
-                            fontFamily: "Poppins-Medium",
-                            fontWeight: FontWeight.w500,
-                            fontSize: 18),
-                      )),
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 0.03 * wid),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(4),
-                    ),
-                    child: TextFormField(
-                      onChanged: (val) {
-                        password = val;
-                      },
-                      obscureText: !pvisibility,
-                      cursorColor: black,
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: Colors.grey[200],
-                        contentPadding: EdgeInsets.fromLTRB(
-                            14 * fem, 13 * fem, 14 * fem, 12 * fem),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                          borderSide: BorderSide.none,
-                        ),
-                        suffixIconColor: grey,
-                        suffixIcon: IconButton(
-                          icon: pvisibility
-                              ? Icon(Icons.visibility)
-                              : Icon(
-                                  Icons.visibility_off,
-                                ),
-                          onPressed: () {
-                            setState(() {
-                              pvisibility = !pvisibility;
-                            });
-                          },
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container(
-                      margin: EdgeInsets.fromLTRB(
-                          0.05 * wid, 0.015 * hei, 0.05 * wid, 0.01 * hei),
-                      child: const Text(
-                        "Confirm Password",
-                        style: TextStyle(
-                            fontFamily: "Poppins-Medium",
-                            fontWeight: FontWeight.w500,
-                            fontSize: 18),
-                      )),
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 0.03 * wid),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: TextFormField(
-                      onChanged: (val) {
-                        cpassword = val;
-                      },
-                      obscureText: !cpvisibility,
-                      cursorColor: grey,
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: Colors.grey[200],
-                        contentPadding: EdgeInsets.fromLTRB(
-                            14 * fem, 13 * fem, 14 * fem, 12 * fem),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                          borderSide: BorderSide.none,
-                        ),
-                        suffixIconColor: grey,
-                        suffixIcon: IconButton(
-                          icon: cpvisibility
-                              ? Icon(Icons.visibility)
-                              : Icon(
-                                  Icons.visibility_off,
-                                ),
-                          onPressed: () {
-                            setState(() {
-                              cpvisibility = !cpvisibility;
-                            });
-                          },
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container(
                       margin:
                           EdgeInsets.only(top: 0.06 * wid, bottom: 0.05 * wid),
                       width: double.infinity,
                       height: 0.05 * hei,
                       child: Center(
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            storedata();
+                          },
                           style: ButtonStyle(
                               backgroundColor:
                                   MaterialStateProperty.all<Color>(red)),

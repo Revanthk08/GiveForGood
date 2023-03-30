@@ -40,6 +40,11 @@ class _ProfilePageState extends State<ProfilePage> {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)),
                         child: TabBar(
+                            labelStyle: TextStyle(
+                              color: Colors.white,
+                            ),
+                            labelColor: Colors.white,
+                            unselectedLabelColor: Colors.black,
                             indicator: BoxDecoration(
                                 color: red,
                                 borderRadius: BorderRadius.circular(10)),
@@ -47,16 +52,16 @@ class _ProfilePageState extends State<ProfilePage> {
                               Text(
                                 "Photos",
                                 style: TextStyle(
-                                    fontFamily: "Poppins",
-                                    fontSize: 0.018 * hei,
-                                    color: Colors.white),
+                                  fontFamily: "Poppins",
+                                  fontSize: 0.018 * hei,
+                                ),
                               ),
                               Text(
                                 "Videos",
                                 style: TextStyle(
-                                    fontFamily: "Poppins",
-                                    fontSize: 0.02 * hei,
-                                    color: Colors.black),
+                                  fontFamily: "Poppins",
+                                  fontSize: 0.02 * hei,
+                                ),
                               )
                             ]),
                       ),
@@ -80,60 +85,95 @@ Widget profilepagewidget(BuildContext context) {
     child: Container(
       width: double.infinity,
       height: 0.3 * hei,
-      padding: EdgeInsets.only(left: 0.03 * wid, top: 0.015 * hei),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        // crossAxisAlignment: CrossAxisAlignment.end,
+      padding: EdgeInsets.only(left: 0.03 * wid),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              // height: 0.1 * hei,
-              Container(
-                child: CircleAvatar(
-                    radius: 40.0,
-                    backgroundImage: AssetImage('assets/Ellipse 8.png')),
-              ),
-
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    padding: EdgeInsets.fromLTRB(0, 0.2 * hei, 0, 0),
-                    child: Text(
-                      'Jenna Ortega',
-                      style: TextStyle(
-                          fontSize: 0.02 * hei,
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.w500),
-                    ),
-                  ),
-                  Container(
-                    child: Text(
-                      'OMR Navulur, 25th Lane, Chenn...',
-                      style: TextStyle(
-                          fontSize: 0.01 * hei,
-                          fontFamily: "Poppins",
-                          fontWeight: FontWeight.w500,
-                          color: Colors.grey.shade500),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
           Container(
-            padding: EdgeInsets.only(right: 0.035 * wid),
-            height: hei * 0.055,
-            child: IconButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Settings()));
-                },
-                icon: SvgPicture.asset('assets/icons/settings.svg',
-                    fit: BoxFit.fitHeight)),
-          )
+            padding: EdgeInsets.symmetric(vertical: 0.05 * hei),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  // crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.only(right: 0.01 * wid),
+                      child: CircleAvatar(
+                          radius: 0.14 * wid,
+                          backgroundImage: AssetImage('assets/Ellipse 8.png')),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      // mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding:
+                              EdgeInsets.fromLTRB(0.01 * wid, 0.01 * hei, 0, 0),
+                          child: Text(
+                            'Jenna Ortega',
+                            style: TextStyle(
+                                fontSize: 0.025 * hei,
+                                fontFamily: "Poppins",
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 0.02 * wid),
+                          child: Text(
+                            'jenna123@gmail.com',
+                            style: TextStyle(
+                              // backgroundColor: Colors.amber,
+                              fontSize: 0.015 * hei,
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.w500,
+                              color: Colors.grey.shade500,
+                            ),
+                            textHeightBehavior: TextHeightBehavior(
+                              applyHeightToFirstAscent: false,
+                              applyHeightToLastDescent: false,
+                            ),
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Edit profile',
+                            style: TextStyle(
+                              // backgroundColor: Colors.amber,
+                              fontSize: 0.015 * hei,
+                              fontFamily: "Poppins",
+                              fontWeight: FontWeight.w500,
+                              color: red,
+                            ),
+                            textHeightBehavior: TextHeightBehavior(
+                              applyHeightToFirstAscent: true,
+                              applyHeightToLastDescent: true,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Container(
+                  padding: EdgeInsets.only(right: 0.0 * wid),
+                  height: hei * 0.055,
+                  child: IconButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Settings()));
+                      },
+                      icon: SvgPicture.asset('assets/icons/settings.svg',
+                          fit: BoxFit.fitHeight)),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     ),

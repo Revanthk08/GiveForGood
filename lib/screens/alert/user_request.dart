@@ -4,7 +4,6 @@ import 'package:givelive/screens/explorePage/reusable/Appbar.dart';
 
 class carddetails extends StatefulWidget {
   const carddetails({super.key});
-
   @override
   State<carddetails> createState() => _carddetailsState();
 }

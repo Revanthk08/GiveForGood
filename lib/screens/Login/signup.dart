@@ -15,44 +15,57 @@ class _SignUpState extends State<SignUp> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     double hei = MediaQuery.of(context).size.height;
     double wid = MediaQuery.of(context).size.width;
-    TabController s = TabController(length: 2, vsync: this);
-    return Scaffold(
-        body: SafeArea(
-      child: Column(
-        children: [
-          Material(
-            child: Container(
-              height: 0.06 * hei,
-              child: Card(
-                margin: EdgeInsets.symmetric(
-                    horizontal: 0.03 * wid, vertical: 0.01 * hei),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
-                child: TabBar(
-                    indicator: BoxDecoration(
-                        color: red, borderRadius: BorderRadius.circular(10)),
-                    tabs: [
-                      Text(
-                        "Photos",
-                        style: TextStyle(
-                            fontFamily: "Poppins",
-                            fontSize: 0.018 * hei,
-                            color: Colors.white),
-                      ),
-                      Text(
-                        "Videos",
-                        style: TextStyle(
-                            fontFamily: "Poppins",
-                            fontSize: 0.02 * hei,
-                            color: Colors.black),
-                      )
-                    ]),
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+          appBar: AppBar(
+            elevation: 0,
+            backgroundColor: Colors.white,
+            bottom: PreferredSize(
+              preferredSize:
+                  Size.fromHeight(AppBar().preferredSize.height * 0.4),
+              child: Container(
+                height: 0.06 * hei,
+                child: Card(
+                  color: Colors.grey[200],
+                  elevation: 2,
+                  margin: EdgeInsets.symmetric(
+                      horizontal: 0.03 * wid, vertical: 0.01 * hei),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  child: TabBar(
+                      indicatorPadding: EdgeInsets.symmetric(
+                          horizontal: 0.01 * wid, vertical: 0.005 * hei),
+                      indicator: BoxDecoration(
+                          color: red, borderRadius: BorderRadius.circular(8)),
+                      tabs: [
+                        Text(
+                          "Individual",
+                          style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontSize: 0.018 * hei,
+                              color: Colors.white),
+                        ),
+                        Text(
+                          "Organization",
+                          style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontSize: 0.02 * hei,
+                              color: Colors.black),
+                        )
+                      ]),
+                ),
               ),
             ),
           ),
-          Expanded(child: TabBarView(children: [IndSignUp(), OrgSignUp()]))
-        ],
-      ),
-    ));
+          body: SafeArea(
+            child: Column(
+              children: const [
+                Expanded(
+                    child: TabBarView(children: [IndSignUp(), OrgSignUp()]))
+              ],
+            ),
+          )),
+    );
   }
 }

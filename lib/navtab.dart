@@ -16,13 +16,13 @@ class _homepageState extends State<homepage> {
   int activetab = 0;
   @override
   Widget build(BuildContext context) {
+    double hei = MediaQuery.of(context).size.height;
+    double wid = MediaQuery.of(context).size.width;
     return Scaffold(
       body: getbody(),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 15.0,
-          vertical: 10,
-        ),
+        padding: EdgeInsets.only(
+            left: 0.02 * wid, bottom: 0.01 * hei, right: 0.02 * wid),
         child: getFooter(),
       ),
     );

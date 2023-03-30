@@ -38,6 +38,7 @@ class _OtpPageState extends State<OtpPage> {
               )
             : SingleChildScrollView(
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
@@ -48,10 +49,11 @@ class _OtpPageState extends State<OtpPage> {
                       ),
                     ),
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(20),
                       child: Card(
                         elevation: 3,
-                        margin: EdgeInsets.symmetric(horizontal: 0.08 * wid),
+                        margin: EdgeInsets.symmetric(
+                            horizontal: 0.08 * wid, vertical: 0.01 * hei),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -61,8 +63,8 @@ class _OtpPageState extends State<OtpPage> {
                               child: Text(
                                 "Enter OTP",
                                 style: TextStyle(
-                                    fontFamily: "Poppins-Bold",
-                                    fontWeight: FontWeight.bold,
+                                    fontFamily: "Poppins",
+                                    fontWeight: FontWeight.w500,
                                     fontSize: 0.02 * hei),
                               ),
                             ),
@@ -148,24 +150,15 @@ class _OtpPageState extends State<OtpPage> {
                                                         FontWeight.w500),
                                                 children: <InlineSpan>[
                                                   TextSpan(
-                                                    text: "Resend",
-                                                    style: TextStyle(
-                                                        color: red,
-                                                        decoration:
-                                                            TextDecoration
-                                                                .underline),
-                                                    recognizer:
-                                                        TapGestureRecognizer()
-                                                          ..onTap = () {
-                                                            Navigator.push(
-                                                              context,
-                                                              MaterialPageRoute(
-                                                                  builder:
-                                                                      (context) =>
-                                                                          const IndSignUp()),
-                                                            );
-                                                          },
-                                                  ),
+                                                      text: "Resend",
+                                                      style: TextStyle(
+                                                          color: red,
+                                                          decoration:
+                                                              TextDecoration
+                                                                  .underline),
+                                                      recognizer:
+                                                          TapGestureRecognizer()
+                                                            ..onTap = () {}),
                                                 ],
                                               ),
                                             ),
