@@ -131,102 +131,105 @@ class _DetailsPageState extends State<DetailsPage> {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: [
-                      Card(
-                        elevation: 1,
-                        child: Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15)),
-                          width: 0.50 * wid,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
+                      InkWell(
+                        onTap: () {},
+                        child: Card(
+                          elevation: 1,
+                          child: Container(
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(15)),
+                            width: 0.50 * wid,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                    padding: EdgeInsets.fromLTRB(
+                                        0.02 * wid, 0.01 * hei, 0.02 * wid, 0),
+                                    child: Image.asset(
+                                      'assets/Rectangle 43.png',
+                                      fit: BoxFit.fill,
+                                    )),
+                                Container(
                                   padding: EdgeInsets.fromLTRB(
-                                      0.02 * wid, 0.01 * hei, 0.02 * wid, 0),
-                                  child: Image.asset(
-                                    'assets/Rectangle 43.png',
-                                    fit: BoxFit.fill,
-                                  )),
-                              Container(
-                                padding: EdgeInsets.fromLTRB(
-                                    0.03 * wid, 0.01 * hei, 0.03 * wid, 0),
-                                child: Row(children: [
-                                  Text(
-                                    "Nirmala Foundation",
+                                      0.03 * wid, 0.01 * hei, 0.03 * wid, 0),
+                                  child: Row(children: [
+                                    Text(
+                                      "Nirmala Foundation",
+                                      style: TextStyle(
+                                          fontFamily: "Poppins",
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 0.015 * hei),
+                                    ),
+                                    Icon(
+                                      Icons.verified_sharp,
+                                      color: Color(0xffED413E),
+                                      size: 0.015 * hei,
+                                    )
+                                  ]),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.fromLTRB(
+                                      0.025 * wid, 0, 0.02 * wid, 0),
+                                  child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Container(
+                                              child: Icon(
+                                                Icons.add_location,
+                                                color: red,
+                                                size: 0.014 * hei,
+                                              ),
+                                            ),
+                                            Text(
+                                              "Anna Nagar",
+                                              style: TextStyle(
+                                                  fontFamily: "Poppins",
+                                                  fontSize: 0.013 * hei,
+                                                  color: red),
+                                            ),
+                                          ],
+                                        ),
+                                        Text(
+                                          DateFormat('kk:mm a')
+                                              .format(DateTime.now()),
+                                          style: TextStyle(
+                                              fontFamily: "Poppins",
+                                              fontSize: 0.012 * hei,
+                                              color: red),
+                                        )
+                                      ]),
+                                ),
+                                Container(
+                                  height: 0.01 * hei,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(20)),
+                                  child: LinearPercentIndicator(
+                                    animation: true,
+                                    animationDuration: 2000,
+                                    width: 0.5 * wid,
+                                    lineHeight: 4,
+                                    percent: 0.40,
+                                    backgroundColor: black,
+                                    progressColor: red,
+                                  ),
+                                ),
+                                Container(
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 0.03 * wid,
+                                      vertical: 0.004 * hei),
+                                  child: Text(
+                                    "₹ 18000",
                                     style: TextStyle(
                                         fontFamily: "Poppins",
-                                        fontWeight: FontWeight.w500,
+                                        color: red,
                                         fontSize: 0.015 * hei),
                                   ),
-                                  Icon(
-                                    Icons.verified_sharp,
-                                    color: Color(0xffED413E),
-                                    size: 0.015 * hei,
-                                  )
-                                ]),
-                              ),
-                              Container(
-                                padding: EdgeInsets.fromLTRB(
-                                    0.025 * wid, 0, 0.02 * wid, 0),
-                                child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Row(
-                                        children: [
-                                          Container(
-                                            child: Icon(
-                                              Icons.add_location,
-                                              color: red,
-                                              size: 0.014 * hei,
-                                            ),
-                                          ),
-                                          Text(
-                                            "Anna Nagar",
-                                            style: TextStyle(
-                                                fontFamily: "Poppins",
-                                                fontSize: 0.013 * hei,
-                                                color: red),
-                                          ),
-                                        ],
-                                      ),
-                                      Text(
-                                        DateFormat('kk:mm a')
-                                            .format(DateTime.now()),
-                                        style: TextStyle(
-                                            fontFamily: "Poppins",
-                                            fontSize: 0.012 * hei,
-                                            color: red),
-                                      )
-                                    ]),
-                              ),
-                              Container(
-                                height: 0.01 * hei,
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(20)),
-                                child: LinearPercentIndicator(
-                                  animation: true,
-                                  animationDuration: 2000,
-                                  width: 0.5 * wid,
-                                  lineHeight: 4,
-                                  percent: 0.40,
-                                  backgroundColor: black,
-                                  progressColor: red,
-                                ),
-                              ),
-                              Container(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 0.03 * wid,
-                                    vertical: 0.004 * hei),
-                                child: Text(
-                                  "₹ 18000",
-                                  style: TextStyle(
-                                      fontFamily: "Poppins",
-                                      color: red,
-                                      fontSize: 0.015 * hei),
-                                ),
-                              )
-                            ],
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -494,7 +497,13 @@ class _DetailsPageState extends State<DetailsPage> {
                                       backgroundColor:
                                           MaterialStateProperty.all<Color>(
                                               red)),
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                carddetails2()));
+                                  },
                                   child: Text(
                                     "View Details",
                                     style: TextStyle(
@@ -647,7 +656,13 @@ class _DetailsPageState extends State<DetailsPage> {
                                       backgroundColor:
                                           MaterialStateProperty.all<Color>(
                                               red)),
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                carddetails2()));
+                                  },
                                   child: Text(
                                     "View Details",
                                     style: TextStyle(

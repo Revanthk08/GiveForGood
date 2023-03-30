@@ -84,13 +84,13 @@ Widget profilepagewidget(BuildContext context) {
     padding: EdgeInsets.symmetric(horizontal: 0.03 * wid),
     child: Container(
       width: double.infinity,
-      height: 0.3 * hei,
+      height: 0.4 * hei,
       padding: EdgeInsets.only(left: 0.03 * wid),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
-            padding: EdgeInsets.symmetric(vertical: 0.05 * hei),
+            padding: EdgeInsets.only(top: 0.05 * hei, bottom: 0.02 * hei),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -100,9 +100,8 @@ Widget profilepagewidget(BuildContext context) {
                   // crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      padding: EdgeInsets.only(right: 0.01 * wid),
                       child: CircleAvatar(
-                          radius: 0.14 * wid,
+                          radius: 0.13 * wid,
                           backgroundImage: AssetImage('assets/Ellipse 8.png')),
                     ),
                     Column(
@@ -159,7 +158,6 @@ Widget profilepagewidget(BuildContext context) {
                   ],
                 ),
                 Container(
-                  padding: EdgeInsets.only(right: 0.0 * wid),
                   height: hei * 0.055,
                   child: IconButton(
                       onPressed: () {
@@ -174,6 +172,48 @@ Widget profilepagewidget(BuildContext context) {
               ],
             ),
           ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    '30',
+                    style: TextStyle(color: red, fontSize: 0.03 * hei),
+                  ),
+                  Text(
+                    'Profile likes',
+                    style: TextStyle(color: black, fontSize: 0.013 * hei),
+                  )
+                ],
+              ),
+              SizedBox(
+                width: 0.1 * wid,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    '45',
+                    style: TextStyle(color: red, fontSize: 0.03 * hei),
+                  ),
+                  Text(
+                    'Profile likes',
+                    style: TextStyle(color: black, fontSize: 0.013 * hei),
+                  )
+                ],
+              )
+            ],
+          ),
+          Container(
+            padding: EdgeInsets.only(top: 0.02 * hei),
+            child: Text(
+              'Hey there , I am Jenna Forbes and I am a Computer Science and Engineering student trying to use technology for good will. ',
+              style: TextStyle(fontSize: 0.017 * hei),
+            ),
+          )
         ],
       ),
     ),

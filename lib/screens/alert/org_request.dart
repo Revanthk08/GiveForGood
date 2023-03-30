@@ -46,7 +46,9 @@ class _carddetails2State extends State<carddetails2> {
         ),
         elevation: 0,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
           padding: EdgeInsets.only(left: 0.02 * wid),
           icon: Icon(
             Icons.arrow_back,
@@ -238,7 +240,6 @@ class _carddetails2State extends State<carddetails2> {
           ),
         ),
       ),
-      
     );
   }
 }

@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
           theme: ThemeData(fontFamily: "Poppins"),
           debugShowCheckedModeBanner: false,
-          home: firstPage()),
+          home: homepage()),
     );
   }
 }
