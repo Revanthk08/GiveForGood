@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<img align="center" src="./assets/logo.svg" width="20%"/>
+<img align="center" src="./assets/logo.svg"/>
   <h1 align="center"> (Give for Good) </h1>
 <p align="center">A <b>Google DSC Solution Challenge</b> submission</p>
 
@@ -42,7 +42,7 @@ screen
 ```
 
 #### Constants
-This project uses 'Popins' as it's primary font. All the fonts have been pre-imported.
+This project uses 'Poppins' as it's primary font. All the fonts have been pre-imported.
 
 Moreover, here are a few constants which are used throughout the project, and have been added within a **CodeRedColors** class, use them accordingly.
 
@@ -69,7 +69,7 @@ Our mobile app for food donation serves as a tool to allow people and groups to 
 Key Features:
 - Food donation: Easily donate surplus food to local charities and community groups.
 - Community creation: Create communities to distribute food to those in need as an organisation.
-- Progress: One can know the prgress of donation and completion status.
+- Progress: One can know the progress of donation and completion status.
 - Raise Request: To know how many adults and children are in need of food.
 - Fundraising: To raise funds to organise food donation events.
 - Profile creation: Create a profile to offer services and support the cause.
@@ -90,13 +90,8 @@ Our open-source project on GitHub is open to contributions from anyone who share
 
   ##### Clone the repository
 ```bash
-git clone https://github.com/ishandeveloper/Google-DSC-Solution-Challenge.git
+git clone https://github.com/Revanthk08/GiveForGood.git
 ```
-  ##### Move to the desired folder
-```bash
-cd \Google-DSC-Solution-Challenge
-```
-
   ##### To run the app, simply write
 ```bash
 flutter run
