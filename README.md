@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<img src="./assets/logo.svg" width="20%"/>
+<img align="center" src="./assets/logo.svg" width="20%"/>
   <h1 align="center"> (Give for Good) </h1>
 <p align="center">A <b>Google DSC Solution Challenge</b> submission</p>
 
