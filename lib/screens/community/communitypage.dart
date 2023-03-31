@@ -181,14 +181,551 @@ class _CommunityPageState extends State<CommunityPage> {
           ),
         ),
         Expanded(
-          child: ListView.builder(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            itemCount: 6,
-            itemBuilder: (BuildContext context, int index) {
-              return CommunityCard(hei, wid);
-            },
-          ),
+          child: Container(
+              child: Column(
+            children: [
+              Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  margin: EdgeInsets.symmetric(
+                      horizontal: 0.04 * wid, vertical: 0.005 * hei),
+                  elevation: 2,
+                  child: Container(
+                    margin: EdgeInsets.symmetric(
+                        horizontal: 0.01 * wid, vertical: 0.001 * hei),
+                    height: 0.075 * hei,
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 0.01 * wid),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              ClipRRect(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10)),
+                                child: Container(
+                                  height: 0.1 * hei,
+                                  margin: EdgeInsets.symmetric(
+                                      vertical: 0.01 * hei),
+                                  width: 0.12 * wid,
+                                  // decoration: BoxDecoration(
+                                  //   borderRadius: BorderRadius.all(Radius.circular(20)),
+                                  // ),
+                                  child: Image.asset(
+                                    'assets/Rectangle 43.png',
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.fromLTRB(
+                                        0.03 * wid, 0, 0, 0),
+                                    child: Text(
+                                      "Nirmala Foundation",
+                                      style: TextStyle(
+                                          fontFamily: "Poppins",
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 0.015 * hei),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.025 * wid, 0, 0, 0),
+                                        child: Icon(
+                                          Icons.add_location,
+                                          color: red,
+                                          size: 0.02 * hei,
+                                        ),
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.001 * wid, 0, 0, 0),
+                                        child: Text(
+                                          "T Nagar, Chennai",
+                                          style: TextStyle(
+                                            fontFamily: "Poppins",
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 0.012 * hei,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_forward,
+                                color: red,
+                                size: 20,
+                              ))
+                        ],
+                      ),
+                    ),
+                  )),
+              Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  margin: EdgeInsets.symmetric(
+                      horizontal: 0.04 * wid, vertical: 0.005 * hei),
+                  elevation: 2,
+                  child: Container(
+                    margin: EdgeInsets.symmetric(
+                        horizontal: 0.01 * wid, vertical: 0.001 * hei),
+                    height: 0.075 * hei,
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 0.01 * wid),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              ClipRRect(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10)),
+                                child: Container(
+                                  height: 0.1 * hei,
+                                  margin: EdgeInsets.symmetric(
+                                      vertical: 0.01 * hei),
+                                  width: 0.12 * wid,
+                                  // decoration: BoxDecoration(
+                                  //   borderRadius: BorderRadius.all(Radius.circular(20)),
+                                  // ),
+                                  child: Image.asset(
+                                    'assets/Rectangle 43.png',
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.fromLTRB(
+                                        0.03 * wid, 0, 0, 0),
+                                    child: Text(
+                                      "Robin Hood Army",
+                                      style: TextStyle(
+                                          fontFamily: "Poppins",
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 0.015 * hei),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.025 * wid, 0, 0, 0),
+                                        child: Icon(
+                                          Icons.add_location,
+                                          color: red,
+                                          size: 0.02 * hei,
+                                        ),
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.001 * wid, 0, 0, 0),
+                                        child: Text(
+                                          "Besant Nagar",
+                                          style: TextStyle(
+                                            fontFamily: "Poppins",
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 0.012 * hei,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_forward,
+                                color: red,
+                                size: 20,
+                              ))
+                        ],
+                      ),
+                    ),
+                  )),
+              Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  margin: EdgeInsets.symmetric(
+                      horizontal: 0.04 * wid, vertical: 0.005 * hei),
+                  elevation: 2,
+                  child: Container(
+                    margin: EdgeInsets.symmetric(
+                        horizontal: 0.01 * wid, vertical: 0.001 * hei),
+                    height: 0.075 * hei,
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 0.01 * wid),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              ClipRRect(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10)),
+                                child: Container(
+                                  height: 0.1 * hei,
+                                  margin: EdgeInsets.symmetric(
+                                      vertical: 0.01 * hei),
+                                  width: 0.12 * wid,
+                                  // decoration: BoxDecoration(
+                                  //   borderRadius: BorderRadius.all(Radius.circular(20)),
+                                  // ),
+                                  child: Image.asset(
+                                    'assets/Rectangle 43.png',
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.fromLTRB(
+                                        0.03 * wid, 0, 0, 0),
+                                    child: Text(
+                                      "Feeding India",
+                                      style: TextStyle(
+                                          fontFamily: "Poppins",
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 0.015 * hei),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.025 * wid, 0, 0, 0),
+                                        child: Icon(
+                                          Icons.add_location,
+                                          color: red,
+                                          size: 0.02 * hei,
+                                        ),
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.001 * wid, 0, 0, 0),
+                                        child: Text(
+                                          "Anna Nagar",
+                                          style: TextStyle(
+                                            fontFamily: "Poppins",
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 0.012 * hei,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_forward,
+                                color: red,
+                                size: 20,
+                              ))
+                        ],
+                      ),
+                    ),
+                  )),
+              Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  margin: EdgeInsets.symmetric(
+                      horizontal: 0.04 * wid, vertical: 0.005 * hei),
+                  elevation: 2,
+                  child: Container(
+                    margin: EdgeInsets.symmetric(
+                        horizontal: 0.01 * wid, vertical: 0.001 * hei),
+                    height: 0.075 * hei,
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 0.01 * wid),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              ClipRRect(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10)),
+                                child: Container(
+                                  height: 0.1 * hei,
+                                  margin: EdgeInsets.symmetric(
+                                      vertical: 0.01 * hei),
+                                  width: 0.12 * wid,
+                                  // decoration: BoxDecoration(
+                                  //   borderRadius: BorderRadius.all(Radius.circular(20)),
+                                  // ),
+                                  child: Image.asset(
+                                    'assets/Rectangle 43.png',
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.fromLTRB(
+                                        0.03 * wid, 0, 0, 0),
+                                    child: Text(
+                                      "Annakshetra Foundation",
+                                      style: TextStyle(
+                                          fontFamily: "Poppins",
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 0.015 * hei),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.025 * wid, 0, 0, 0),
+                                        child: Icon(
+                                          Icons.add_location,
+                                          color: red,
+                                          size: 0.02 * hei,
+                                        ),
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.001 * wid, 0, 0, 0),
+                                        child: Text(
+                                          "Tambaram",
+                                          style: TextStyle(
+                                            fontFamily: "Poppins",
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 0.012 * hei,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_forward,
+                                color: red,
+                                size: 20,
+                              ))
+                        ],
+                      ),
+                    ),
+                  )),
+              Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  margin: EdgeInsets.symmetric(
+                      horizontal: 0.04 * wid, vertical: 0.005 * hei),
+                  elevation: 2,
+                  child: Container(
+                    margin: EdgeInsets.symmetric(
+                        horizontal: 0.01 * wid, vertical: 0.001 * hei),
+                    height: 0.075 * hei,
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 0.01 * wid),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              ClipRRect(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10)),
+                                child: Container(
+                                  height: 0.1 * hei,
+                                  margin: EdgeInsets.symmetric(
+                                      vertical: 0.01 * hei),
+                                  width: 0.12 * wid,
+                                  // decoration: BoxDecoration(
+                                  //   borderRadius: BorderRadius.all(Radius.circular(20)),
+                                  // ),
+                                  child: Image.asset(
+                                    'assets/Rectangle 43.png',
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.fromLTRB(
+                                        0.03 * wid, 0, 0, 0),
+                                    child: Text(
+                                      "No Food Waste",
+                                      style: TextStyle(
+                                          fontFamily: "Poppins",
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 0.015 * hei),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.025 * wid, 0, 0, 0),
+                                        child: Icon(
+                                          Icons.add_location,
+                                          color: red,
+                                          size: 0.02 * hei,
+                                        ),
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.001 * wid, 0, 0, 0),
+                                        child: Text(
+                                          "Adyar",
+                                          style: TextStyle(
+                                            fontFamily: "Poppins",
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 0.012 * hei,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_forward,
+                                color: red,
+                                size: 20,
+                              ))
+                        ],
+                      ),
+                    ),
+                  )),
+              Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  margin: EdgeInsets.symmetric(
+                      horizontal: 0.04 * wid, vertical: 0.005 * hei),
+                  elevation: 2,
+                  child: Container(
+                    margin: EdgeInsets.symmetric(
+                        horizontal: 0.01 * wid, vertical: 0.001 * hei),
+                    height: 0.075 * hei,
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 0.01 * wid),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              ClipRRect(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(10)),
+                                child: Container(
+                                  height: 0.1 * hei,
+                                  margin: EdgeInsets.symmetric(
+                                      vertical: 0.01 * hei),
+                                  width: 0.12 * wid,
+                                  // decoration: BoxDecoration(
+                                  //   borderRadius: BorderRadius.all(Radius.circular(20)),
+                                  // ),
+                                  child: Image.asset(
+                                    'assets/Rectangle 43.png',
+                                    fit: BoxFit.fill,
+                                  ),
+                                ),
+                              ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    margin: EdgeInsets.fromLTRB(
+                                        0.03 * wid, 0, 0, 0),
+                                    child: Text(
+                                      "Hunger Heroes",
+                                      style: TextStyle(
+                                          fontFamily: "Poppins",
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 0.015 * hei),
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.025 * wid, 0, 0, 0),
+                                        child: Icon(
+                                          Icons.add_location,
+                                          color: red,
+                                          size: 0.02 * hei,
+                                        ),
+                                      ),
+                                      Container(
+                                        padding: EdgeInsets.fromLTRB(
+                                            0.001 * wid, 0, 0, 0),
+                                        child: Text(
+                                          "Mylapore",
+                                          style: TextStyle(
+                                            fontFamily: "Poppins",
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 0.012 * hei,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.arrow_forward,
+                                color: red,
+                                size: 20,
+                              ))
+                        ],
+                      ),
+                    ),
+                  ))
+            ],
+          )),
         )
       ]),
     ));

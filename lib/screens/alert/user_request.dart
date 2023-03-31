@@ -75,7 +75,7 @@ class _carddetailsState extends State<carddetails> {
             onPressed: () {},
             style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(red)),
-            child: Text('Donate',
+            child: Text('Takeover',
                 style: TextStyle(
                   fontFamily: "Poppins",
                   fontWeight: FontWeight.w500,

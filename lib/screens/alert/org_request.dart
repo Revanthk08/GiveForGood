@@ -236,7 +236,28 @@ class _carddetails2State extends State<carddetails2> {
                   ),
                 ),
               ),
+              Container()
             ],
+          ),
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: Padding(
+        padding: EdgeInsets.only(bottom: 0.05 * hei),
+        child: Container(
+          margin: EdgeInsets.fromLTRB(
+              0.052 * wid, 0.0 * hei, 0.052 * wid, 0.01 * hei),
+          child: TextButton(
+            onPressed: () {},
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(red)),
+            child: Text('Takeover',
+                style: TextStyle(
+                  fontFamily: "Poppins",
+                  fontWeight: FontWeight.w500,
+                  fontSize: 0.016 * hei,
+                  color: Colors.white,
+                )),
           ),
         ),
       ),

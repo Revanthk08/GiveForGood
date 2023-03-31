@@ -57,11 +57,10 @@ class explore extends StatelessWidget {
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: Container(
-                              // child: Image.network(
-                              //   "https://source.unsplash.com/random?sig=$index",
-                              //   fit: BoxFit.fill,
-                              // )
-                              color: red,
+                              child: Image.network(
+                                "https://source.unsplash.com/random?sig=$index",
+                                fit: BoxFit.fill,
+                              )
                             )),
                       );
                     },
