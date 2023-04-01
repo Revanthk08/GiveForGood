@@ -1,11 +1,10 @@
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fishandeveloper%2FGoogle-DSC-Solution-Challenge&count_bg=%23EF466F&title_bg=%23EB2F5D&icon=googlekeep.svg&icon_color=%23E7E7E7&title=GDSC%20Solution%20Challenge%20Visits&edge_flat=true)](https://hits.seeyoufarm.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<img src="./designs/hero.png" width="100%"/>
-  <h1 align="center"> GG (Give for Good) </h1>
+<img align="center" src="./assets/logo.svg" width="20%"/>
+  <h1 align="center"> (Give for Good) </h1>
 <p align="center">A <b>Google DSC Solution Challenge</b> submission</p>
 
-<p align="center">The food donation app is a mobile application that offers a user-friendly platform for individuals and businesses to donate excess food to nearby charities and community groups. The app facilitates easy browsing of a list of available charities, allowing users to select the one they wish to support. Additionally, the app offers details on the impact of the user's donation, including the number of meals provided and the reduction in carbon emissions. Users can also receive notifications about new donation opportunities and keep up-to-date with their chosen charities. Overall, the food donation app is an effective and convenient means of reducing food waste and supporting the local community.</p>
+<p align="center">Give for Good is a cross platform application that offers a user-friendly platform for individuals and businesses to donate excess food to nearby charities and community groups. The app facilitates easy browsing of a list of available charities, allowing users to select the one they wish to support. Additionally, the app offers details on the impact of the user's donation, including the number of meals provided.. Users can also receive notifications about new donation opportunities and keep up-to-date with their chosen charities. Overall, Give for Good app is an effective and convenient means of reducing food waste and supporting the local community.</p>
 
 ### Video Submission
 
