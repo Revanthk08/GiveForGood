@@ -72,7 +72,7 @@ All the design/mockups for the app have been added in the `designs` directory. Y
 <b>Food donation:</b> Easily donate surplus food to local charities and community groups.<br>
 <b>Community creation:</b> Create communities to distribute food to those in need as an organisation.<br>
 <b>Progress:</b> One can know the prgress of donation and completion status.<br>
-<b>Raise Request:<b> To know how many adults and children are in need of food.<br>
+<b>Raise Request:</b> To know how many adults and children are in need of food.<br>
 <b>Fundraising:</b> To raise funds to organise food donation events.<br>
 <b>Profile creation:</b> Create a profile to offer services and support the cause.<br>
 
