@@ -109,7 +109,7 @@ We are a peer group from GDSC VelTech. Innovation shouldn't come at the cost of 
 
 
 
-[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://github.com/Revanthk08)  
+<img src = "https://github.com/Revanthk08/GiveForGood/blob/master/Design/created-by-_developers_.svg"></img>
 
 
 <p>
