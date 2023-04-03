@@ -1,10 +1,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<div align="center">
+<img align="center" src="https://github.com/Revanthk08/GiveForGood/blob/master/assets/Group%2013.png" width="20%"/>
+</div>
+<h1 align="center"> Give for Good </h1>
 
-<img align="center" src="./assets/logo.svg" width="20%"/>
-  <h1 align="center"> (Give for Good) </h1>
-<p align="center">A <b>Google DSC Solution Challenge</b> submission</p>
-
-<p align="center">Give for Good is a cross platform application that offers a user-friendly platform for individuals and businesses to donate excess food to nearby charities and community groups. The app facilitates easy browsing of a list of available charities, allowing users to select the one they wish to support. Additionally, the app offers details on the impact of the user's donation, including the number of meals provided.. Users can also receive notifications about new donation opportunities and keep up-to-date with their chosen charities. Overall, Give for Good app is an effective and convenient means of reducing food waste and supporting the local community.</p>
+<p align="center">Give for Good is a cross platform application that offers a user-friendly platform for individuals and businesses to donate excess food to nearby charities and community groups. The app allows user to raise a request in the app letting other users know about the locations where food is needed. The users can provide excess food over there preventing food from being wasted. We also facilitate formation of communities where group of people can join and participate in good deeds for others. Organizations can login using their oragnization name with a valid government proof. They can have fund raising requests for events conducted by them.</p>
 
 ### Video Submission
 
@@ -77,24 +77,22 @@ Key Features:
 Technology Stack:
 - Flutter: Cross-platform framework for mobile app development
 - Firebase: Backend infrastructure for authentication, database, and storage
-
-Impact:<br><br>
-Our app has the potential to create a significant impact in our community by reducing food waste and supporting those in need. We invite everyone to join us in our mission to promote sustainable practices and combat hunger.
-
-Contributing:<br><br>
-Our open-source project on GitHub is open to contributions from anyone who shares our vision of a world without hunger. You can join us to contribute to the codebase, report any issues you encounter, or suggest new features that align with our mission. We would be delighted to have you on board.
-
-
+- Google Maps platform: Google maps API for map related tasks
+- GooglePay : payment services provided by Google
 
 ## Setup
 
   ##### Clone the repository
 ```bash
-git clone https://github.com/ishandeveloper/Google-DSC-Solution-Challenge.git
+git clone https://github.com/Revanthk08/GiveForGood.git
 ```
   ##### Move to the desired folder
 ```bash
-cd \Google-DSC-Solution-Challenge
+cd \GiveForGood
+```
+  ##### Download the dependencies
+```bash
+flutter pub get
 ```
 
   ##### To run the app, simply write
@@ -102,18 +100,17 @@ cd \Google-DSC-Solution-Challenge
 flutter run
 ```
 ## About
-A team of 4 students at Veltech University developed a food donation application to tackle food wastage and hunger in our locality. The app provides users with a simple and convenient way to donate surplus food to nearby charities and community organizations, and track the impact of their donations.
+We are a peer group from GDSC VelTech. Innovation shouldn't come at the cost of excessive resources, and we're proud to have created a product that demonstrates this. We believe that no one should have to go hungry, and we're committed to making a difference in our community. We invite everyone to join us in our mission to promote sustainable practices and combat hunger.
 
-Our team employed the use of Flutter, Dart, and Firebase to develop the application's authentication features. Flutter aided us in creating an intuitive and seamless user interface, while Dart provided a dependable programming language. Firebase's authentication feature enabled us to manage user data in a secure and private manner.
- We are proud of our achievements and remain committed to developing innovative solutions to address critical social problems.
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://github.com/Revanthk08)  
 
 <p align="left">
-<a href="https://github.com/ishandeveloper"><img width="128px" src="https://avatars1.githubusercontent.com/u/54989142?s=460&u=4b787a0f50c1236b915d4766aa1a40c1b1d9f313&v=4"></a><a href="https://github.com/kushalbhanot"><img width="128px" src="https://avatars.githubusercontent.com/u/51001134?v=4"></a><a href="https://github.com/himanshusharma89"><img width="128px" src="https://avatars.githubusercontent.com/u/44980497?v=4"></a><a href="https://github.com/bhaveshgoyal182"><img width="128px" src="https://avatars.githubusercontent.com/u/60166991?v=4"></a>
+<a href="https://github.com/Revanthk08"><img width="128px" src="https://avatars.githubusercontent.com/u/85727301?s=400&u=05fcbd13ada32147edfae143fcf4aecec50f113b&v=4"></a><a href="https://github.com/sasankpenugonda"><img width="128px" src="https://avatars.githubusercontent.com/u/81469295?v=4"></a><a href="https://github.com/dvkkishore"><img width="128px" src="https://avatars.githubusercontent.com/u/72384182?v=4"></a><a href="https://github.com/Praneeth2kp"><img width="128px" src="https://avatars.githubusercontent.com/u/111587118?v=4"></a>
 </p>
 
 To get aquainted with the flutter and firebase,the online documentation , tutorials, samples, and guidance on mobile development and also a full API reference the links are given below
 <br><br>
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
+
