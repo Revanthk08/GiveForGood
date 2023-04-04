@@ -12,8 +12,8 @@
 
 The link for our project demo can be found here👇👇👇
 
-<a href="https://youtu.be/mhJpTKpHa2I">
-<img src="https://i.ytimg.com/an_webp/mhJpTKpHa2I/mqdefault_6s.webp?du=3000&sqp=CKDGrKEG&rs=AOn4CLBkzeFe31__loIBYyfUf2gn38oqmw" width="500px">                                                                                
+<a href="https://www.youtube.com/watch?v=mhJpTKpHa2I">
+<img src="https://i.ytimg.com/vi/mhJpTKpHa2I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCXEtrzxhUu6FQKGCJPdfuNDRNQvA" width="500px">                                                                                
 </a>
 
 <h2>Project Info</h2>
